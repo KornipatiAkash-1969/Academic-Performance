@@ -1,0 +1,335 @@
+.teacher-dashboard {
+
+  min-height: 100vh;
+
+  background: #F1F5F9;
+
+}
+
+
+/* CONTENT */
+
+.teacher-content {
+
+  padding: 40px;
+
+}
+
+
+/* TOP */
+
+.dashboard-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+
+}
+
+.dashboard-top h1 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 36px;
+
+  font-weight: bold;
+
+}
+
+.dashboard-top p {
+
+  margin-top: 10px;
+
+  color: #64748B;
+
+  font-size: 16px;
+
+}
+
+
+/* PROFILE CARD */
+
+.teacher-card {
+
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 32px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 30px;
+
+  margin-bottom: 40px;
+
+  box-shadow:
+    0 4px 16px rgba(0,0,0,0.08);
+
+}
+
+
+/* AVATAR */
+
+.teacher-avatar {
+
+  width: 110px;
+
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: #2563EB;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 44px;
+
+  font-weight: bold;
+
+  flex-shrink: 0;
+
+}
+
+
+/* DETAILS */
+
+.teacher-details {
+
+  flex: 1;
+
+}
+
+.teacher-details h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 24px;
+
+  color: #0F172A;
+
+  font-size: 28px;
+
+}
+
+
+/* INFO GRID */
+
+.teacher-info-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+
+}
+
+
+/* INFO BOX */
+
+.info-box {
+
+  background: #F8FAFC;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+  border:
+    1px solid #E2E8F0;
+
+}
+
+.info-box span {
+
+  display: block;
+
+  color: #64748B;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+
+}
+
+.info-box h3 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 18px;
+
+  word-break: break-word;
+
+}
+
+
+/* DASHBOARD GRID */
+
+.dashboard-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 24px;
+
+  margin-bottom: 40px;
+
+}
+
+
+/* DASHBOARD BOX */
+
+.dashboard-box {
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 32px;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+
+  border:
+    1px solid transparent;
+
+}
+
+.dashboard-box:hover {
+
+  transform: translateY(-6px);
+
+  border-color: #2563EB;
+
+}
+
+
+/* ICON */
+
+.box-icon {
+
+  font-size: 50px;
+
+  margin-bottom: 18px;
+
+}
+
+
+/* BOX TITLE */
+
+.dashboard-box h3 {
+
+  margin: 0 0 12px;
+
+  color: #2563EB;
+
+  font-size: 24px;
+
+}
+
+
+/* BOX TEXT */
+
+.dashboard-box p {
+
+  margin: 0;
+
+  color: #64748B;
+
+  line-height: 1.7;
+
+}
+
+
+/* NOTES */
+
+.notes-section {
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+}
+
+
+/* NOTES HEADER */
+
+.notes-header {
+
+  margin-bottom: 24px;
+
+}
+
+.notes-header h2 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 28px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .teacher-content {
+
+    padding: 20px;
+
+  }
+
+  .teacher-card {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+  }
+
+  .teacher-info-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .dashboard-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}

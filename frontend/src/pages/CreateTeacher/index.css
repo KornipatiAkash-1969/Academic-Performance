@@ -1,0 +1,143 @@
+.create-teacher-page {
+
+  min-height: 100vh;
+
+  background: #F1F5F9;
+
+}
+
+
+/* CONTENT */
+
+.create-teacher-content {
+
+  padding: 40px;
+
+}
+
+
+/* TOP */
+
+.teacher-top {
+
+  margin-bottom: 30px;
+
+}
+
+.teacher-top h1 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 36px;
+
+  font-weight: bold;
+
+}
+
+.teacher-top p {
+
+  margin-top: 10px;
+
+  color: #64748B;
+
+}
+
+
+/* FORM */
+
+.teacher-form {
+
+  background: white;
+
+  padding: 32px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 4px 16px rgba(0,0,0,0.08);
+
+  max-width: 700px;
+
+}
+
+
+/* INPUT GROUP */
+
+.input-group {
+
+  margin-bottom: 24px;
+
+}
+
+.input-group label {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: 600;
+
+  color: #0F172A;
+
+}
+
+
+/* INPUT */
+
+.input-group input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border:
+    1px solid #CBD5E1;
+
+  border-radius: 12px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+
+}
+
+.input-group input:focus {
+
+  border-color: #2563EB;
+
+}
+
+
+/* BUTTON */
+
+.teacher-form button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #2563EB;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+.teacher-form button:hover {
+
+  background: #1D4ED8;
+
+}

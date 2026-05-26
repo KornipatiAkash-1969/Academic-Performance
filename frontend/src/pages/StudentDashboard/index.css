@@ -1,0 +1,172 @@
+.student-dashboard {
+
+  min-height: 100vh;
+
+  background: #F1F5F9;
+
+}
+
+
+/* CONTENT */
+
+.student-content {
+
+  padding: 40px;
+
+}
+
+
+/* TITLE */
+
+.student-content h1 {
+
+  margin-top: 0;
+
+  margin-bottom: 30px;
+
+  color: #0F172A;
+
+  font-size: 36px;
+
+  font-weight: bold;
+
+}
+
+
+/* PROFILE CARD */
+
+.student-card {
+
+  background: white;
+
+  padding: 32px;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+  margin-bottom: 40px;
+
+}
+
+
+/* PROFILE TITLE */
+
+.student-card h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 24px;
+
+  color: #2563EB;
+
+  font-size: 28px;
+
+}
+
+
+/* PROFILE INFO */
+
+.student-card p {
+
+  margin: 14px 0;
+
+  color: #475569;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+}
+
+
+/* BUTTON GRID */
+
+.student-links {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 24px;
+
+  margin-bottom: 40px;
+
+}
+
+
+/* BUTTON */
+
+.student-btn {
+
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
+  color: #2563EB;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+
+  border:
+    1px solid transparent;
+
+}
+
+.student-btn:hover {
+
+  transform: translateY(-6px);
+
+  border-color: #2563EB;
+
+  background: #EFF6FF;
+
+}
+
+
+/* NOTES */
+
+.notes-section {
+
+  margin-top: 30px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .student-content {
+
+    padding: 20px;
+
+  }
+
+  .student-links {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .student-card {
+
+    padding: 24px;
+
+  }
+
+}

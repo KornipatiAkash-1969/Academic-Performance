@@ -1,0 +1,237 @@
+.student-subjects {
+
+  min-height: 100vh;
+
+  background: #F1F5F9;
+
+}
+
+
+/* CONTENT */
+
+.student-subjects-content {
+
+  padding: 40px;
+
+}
+
+
+/* TOP SECTION */
+
+.subjects-top {
+
+  margin-bottom: 35px;
+
+}
+
+.subjects-top h1 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 38px;
+
+  font-weight: 700;
+
+}
+
+.subjects-top p {
+
+  margin-top: 12px;
+
+  color: #64748B;
+
+  font-size: 16px;
+
+}
+
+
+/* GRID */
+
+.subject-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 28px;
+
+}
+
+
+/* CARD */
+
+.subject-card {
+
+  background: #FFFFFF;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 6px 18px rgba(15,23,42,0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border 0.3s ease;
+
+  border:
+    1px solid transparent;
+
+}
+
+.subject-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #2563EB;
+
+  box-shadow:
+    0 12px 24px rgba(37,99,235,0.15);
+
+}
+
+
+/* ICON BOX */
+
+.subject-icon {
+
+  width: 75px;
+
+  height: 75px;
+
+  border-radius: 20px;
+
+  background: #DBEAFE;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 34px;
+
+  margin-bottom: 24px;
+
+}
+
+
+/* SUBJECT TITLE */
+
+.subject-card h3 {
+
+  margin-top: 0;
+
+  margin-bottom: 18px;
+
+  color: #2563EB;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+}
+
+
+/* TEXT */
+
+.subject-card p {
+
+  margin: 12px 0;
+
+  color: #475569;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+
+}
+
+
+/* STRONG */
+
+.subject-card strong {
+
+  color: #0F172A;
+
+}
+
+
+/* EMPTY BOX */
+
+.empty-box {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  color: #64748B;
+
+  font-size: 16px;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+/* LOADING BOX */
+
+.loading-box {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  color: #64748B;
+
+  font-size: 16px;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+  .student-subjects-content {
+
+    padding: 20px;
+
+  }
+
+  .subject-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .subjects-top h1 {
+
+    font-size: 30px;
+
+  }
+
+  .subject-card {
+
+    padding: 24px;
+
+  }
+
+}

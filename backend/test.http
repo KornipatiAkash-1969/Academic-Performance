@@ -1,0 +1,252 @@
+##################################################
+# STUDENT PERFORMANCE SYSTEM API TEST FILE
+# File Path: backend/test.http
+##################################################
+
+##################################################
+# BASE URL
+##################################################
+
+@baseUrl = http://localhost:5000/api
+
+##################################################
+# REGISTER USER
+##################################################
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Teacher One",
+  "email": "teacher@example.com",
+  "password": "123456",
+  "role": "teacher"
+}
+
+###
+
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Student One",
+  "email": "student@example.com",
+  "password": "123456",
+  "role": "student"
+}
+
+###
+
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "name": "Coordinator One",
+  "email": "coordinator@example.com",
+  "password": "123456",
+  "role": "coordinator"
+}
+
+###
+
+##################################################
+# LOGIN
+##################################################
+
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "teacher@example.com",
+  "password": "123456"
+}
+
+###
+
+##################################################
+# COPY TOKEN FROM LOGIN RESPONSE
+##################################################
+
+@token = YOUR_JWT_TOKEN_HERE
+
+##################################################
+# CREATE SUBJECT
+##################################################
+
+POST {{baseUrl}}/subjects
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "subject_name": "Mathematics",
+  "semester": 5
+}
+
+###
+
+POST {{baseUrl}}/subjects
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "subject_name": "Physics",
+  "semester": 5
+}
+
+###
+
+##################################################
+# GET SUBJECTS
+##################################################
+
+GET {{baseUrl}}/subjects
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# UPDATE SUBJECT
+##################################################
+
+PUT {{baseUrl}}/subjects/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "subject_name": "Advanced Mathematics",
+  "semester": 6
+}
+
+###
+
+##################################################
+# DELETE SUBJECT
+##################################################
+
+DELETE {{baseUrl}}/subjects/2
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# CREATE ASSESSMENT
+##################################################
+
+POST {{baseUrl}}/assessments
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "assessment_type": "Mid-Term Exam",
+  "total_marks": 100
+}
+
+###
+
+POST {{baseUrl}}/assessments
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "assessment_type": "Final Exam",
+  "total_marks": 100
+}
+
+###
+
+##################################################
+# GET ASSESSMENTS
+##################################################
+
+GET {{baseUrl}}/assessments
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# ADD MARKS
+##################################################
+
+POST {{baseUrl}}/marks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "student_id": 2,
+  "subject_id": 1,
+  "assessment_id": 1,
+  "marks_obtained": 89
+}
+
+###
+
+POST {{baseUrl}}/marks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "student_id": 2,
+  "subject_id": 1,
+  "assessment_id": 2,
+  "marks_obtained": 95
+}
+
+###
+
+##################################################
+# GET MARKS
+##################################################
+
+GET {{baseUrl}}/marks
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# DASHBOARD SUMMARY
+##################################################
+
+GET {{baseUrl}}/dashboard/summary
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# STUDENT REPORT
+##################################################
+
+GET {{baseUrl}}/reports/students/2
+Authorization: Bearer {{token}}
+
+###
+
+##################################################
+# INVALID MARKS TEST
+##################################################
+
+POST {{baseUrl}}/marks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "student_id": 2,
+  "subject_id": 1,
+  "assessment_id": 1,
+  "marks_obtained": 120
+}
+
+###
+
+##################################################
+# INVALID LOGIN TEST
+##################################################
+
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "wrong@example.com",
+  "password": "wrongpassword"
+}
+
+###

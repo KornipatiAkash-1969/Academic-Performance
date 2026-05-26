@@ -1,0 +1,204 @@
+.student-page {
+
+  min-height: 100vh;
+
+  background: #F1F5F9;
+
+}
+
+
+/* CONTENT */
+
+.student-content {
+
+  padding: 40px;
+
+}
+
+
+/* TOP */
+
+.student-top {
+
+  margin-bottom: 30px;
+
+}
+
+.student-top h1 {
+
+  margin: 0;
+
+  color: #0F172A;
+
+  font-size: 34px;
+
+}
+
+.student-top p {
+
+  margin-top: 10px;
+
+  color: #64748B;
+
+}
+
+
+/* FORM */
+
+.student-form {
+
+  background: white;
+
+  padding: 32px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 2px 12px rgba(0,0,0,0.08);
+
+  max-width: 700px;
+
+  margin-bottom: 30px;
+
+}
+
+
+/* INPUT GROUP */
+
+.input-group {
+
+  margin-bottom: 24px;
+
+}
+
+.input-group label {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: 600;
+
+  color: #0F172A;
+
+}
+
+
+/* INPUT */
+
+.input-group input {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border:
+    1px solid #CBD5E1;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  box-sizing: border-box;
+
+}
+
+.input-group input:focus {
+
+  border-color: #2563EB;
+
+}
+
+
+/* BUTTON */
+
+.student-form button {
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #2563EB;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+.student-form button:hover {
+
+  background: #1D4ED8;
+
+}
+
+.student-form button:disabled {
+
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+}
+
+
+/* STUDENT CARD */
+
+.student-card {
+
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 2px 12px rgba(0,0,0,0.08);
+
+  max-width: 700px;
+
+  border-left:
+    6px solid #16A34A;
+
+}
+
+
+/* CARD TITLE */
+
+.student-card h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 20px;
+
+  color: #16A34A;
+
+}
+
+
+/* INFO */
+
+.student-info p {
+
+  margin: 12px 0;
+
+  color: #475569;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+}

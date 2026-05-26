@@ -1,0 +1,65 @@
+.header {
+
+  width: 100%;
+
+  background: #2563EB;
+
+  color: white;
+
+  padding: 16px 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+}
+
+.header-logo {
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+}
+
+.header-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+.header-links a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+}
+
+.header-links button {
+
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #2563EB;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
