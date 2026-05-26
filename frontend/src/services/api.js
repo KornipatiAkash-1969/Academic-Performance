@@ -4,13 +4,7 @@ const api = axios.create({
 
   baseURL:
   'https://academic-performance-1.onrender.com/api'
-
 });
-
-
-// ======================================
-// ADD TOKEN
-// ======================================
 
 api.interceptors.request.use(
 

@@ -1,11 +1,6 @@
 import api
 from './api';
 
-
-// ======================================
-// GET ALL STUDENTS
-// ======================================
-
 export const getStudents =
 async () => {
 
@@ -17,11 +12,6 @@ async () => {
   return response.data;
 
 };
-
-
-// ======================================
-// CREATE STUDENT
-// ======================================
 
 export const createStudent =
 async (data) => {

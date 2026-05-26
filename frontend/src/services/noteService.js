@@ -1,10 +1,5 @@
 import api from './api';
 
-
-// ======================================
-// GET NOTES
-// ======================================
-
 export const getNotes =
 async () => {
 
@@ -14,11 +9,6 @@ async () => {
   return response.data;
 
 };
-
-
-// ======================================
-// CREATE NOTE
-// ======================================
 
 export const createNote =
 async (data) => {

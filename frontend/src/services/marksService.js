@@ -2,12 +2,7 @@ import axios
 from 'axios';
 
 const API =
-'http://localhost:5000/api/marks';
-
-
-// ======================================
-// ADD MARKS
-// ======================================
+'https://academic-performance-1.onrender.com/api/marks';
 
 export const addMarks =
 async (formData) => {
@@ -39,11 +34,6 @@ async (formData) => {
 
 };
 
-
-// ======================================
-// GET ALL MARKS
-// ======================================
-
 export const getMarks =
 async () => {
 
@@ -71,11 +61,6 @@ async () => {
   return response.data;
 
 };
-
-
-// ======================================
-// GET STUDENT MARKS
-// ======================================
 
 export const getStudentMarks =
 async () => {

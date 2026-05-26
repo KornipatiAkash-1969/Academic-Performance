@@ -1,10 +1,5 @@
 import api from './api';
 
-
-// ======================================
-// GET SUBJECTS
-// ======================================
-
 export const getSubjects =
 async () => {
 
@@ -14,11 +9,6 @@ async () => {
   return response.data;
 
 };
-
-
-// ======================================
-// CREATE SUBJECT
-// ======================================
 
 export const createSubject =
 async (data) => {
